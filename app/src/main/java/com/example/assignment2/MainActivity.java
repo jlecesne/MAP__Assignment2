@@ -272,6 +272,11 @@ static final String userTotal = null;
                     }
 
                     adapter.notifyDataSetChanged();
+                    numberPicker.setValue(0);
+                    selectedProduct.setText("");
+                    quantity.setText("");
+                    total.setText("");
+                    
                 }
                 else {
                     Toast.makeText(this, "All fields are required", Toast.LENGTH_SHORT).show();
